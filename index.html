@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xWarriors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        font-family: 'Poppins', sans-serif;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+        padding: 1rem 0;
+        background-color: #fff;
+      }
+      .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+      h1 {
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 3px;
+        padding: 12px 0;
+        cursor: pointer;
+      }
+      h2 {
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      nav ul li a {
+        font-size: 11px;
+        margin: 1.2rem 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #aaaaaa;
+        position: relative;
+      }
+      nav ul li a::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        width: 100%;
+        height: 1px;
+        background-color: #aaaaaa;
+        display: none;
+        right: 0;
+      }
+      nav ul li a:hover {
+        color: #222;
+      }
+      nav ul li a:hover:before {
+        display: block;
+      }
+      main {
+        margin-top: 90px;
+        background-color: #f8f8f8;
+      }
+      img {
+        width: 50%;
+      }
+      section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      article {
+        width: 100%;
+        padding: 1.2rem 25px;
+      }
+      h2 {
+        padding: 1.2rem 25px;
+        font-weight: 600;
+        font-size: 28px;
+      }
+      h3 {
+        font-weight: 400;
+        font-size: 26px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 28px;
+      }
+      p.title {
+        font-size: 32px;
+      }
+      .about-text {
+        font-size: 16px;
+        font-weight: 400;
+      }
+      footer {
+        background-color: #f8f8f8;
+        padding-bottom: 30px;
+      }
+      ul.how {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 1.2rem;
+        width: 100%;
+      }
+
+      #about ul {
+        display: flex;
+      }
+      #contacts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid #222;
+      }
+      #contacts li {
+        margin: 12px 25px;
+      }
+      h6 {
+        text-align: center;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-wrapper">
+        <h1 id="h1">xWarriors</h1>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#about"> about </a>
+            </li>
+            <li>
+              <a href="#contacts"> contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <article>
+            <h2>Back from a war to a civil life</h2>
+          </article>
+          <img
+            class="logo-img"
+            src="https://i.ibb.co/vqbkjJp/war-4.png"
+            alt=""
+          />
+        </section>
+        <section>
+          <img
+            src="https://i.ibb.co/PtBy8X7/warr-group-1.png"
+            alt="group photo"
+          />
+          <article>
+            <p class="title">Our mission</p>
+            <p>Help veterans to get back to normal life</p>
+          </article>
+        </section>
+        <section>
+          <article id="about">
+            <p class="title">Key directions</p>
+            <ul>
+              <li>
+                <p>Academy</p>
+                <span>Where the Journey begins</span>
+              </li>
+              <li>
+                <p>Tech</p>
+                <span>Do. Better. Faster Repeat</span>
+              </li>
+              <li>
+                <p>Legion</p>
+                <span>Employ. Scale. Socialize</span>
+              </li>
+            </ul>
+          </article>
+          <img
+            src="https://i.ibb.co/wRk6H4v/warr-group-2.png"
+            alt="group photo"
+          />
+        </section>
+        <section>
+          <ul class="how">
+            <li>
+              <p>#Academy</p>
+              <span>Participants get IT skills</span>
+            </li>
+            <li>
+              <p>#Tech</p>
+              <span>They do simple projects</span>
+            </li>
+            <li>
+              <p>#Legion</p>
+              <span>Veterans get IT jobs, getting back to normal life</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <article id="about">
+            <h3>About</h3>
+            <p class="about-text">
+              The initiative for this project was spearheaded by Alex Stasuk, a
+              seasoned IT professional with 13 years of experience and a member
+              of the Supervisory Board of the Rivne IT Cluster. An extensive
+              informational campaign was launched targeting the patients of the
+              Rivne Regional Hospital for War Veterans. This initiative offers
+              veterans the chance to receive specialized IT training in the
+              following areas: a) Customer/Technical Support; b) DevOps; c) QA.
+              The selection process, guided by the institution's staff
+              psychologist, led to selection of 12 participants for the program.
+              The ﬁrst session took place on August 20 in one of the hospital
+              premises: Alex purchased the necessary equipment for all
+              participants (laptops etc), prepared learning materials and
+              brought pizza. The training adopts ﬂexible approaches, fostering a
+              welcoming atmosphere with informal communication between
+              participants and mentors. This encourages the exchange of both
+              professional and life experiences. The sessions also incorporate
+              shared pizza meals and walks during breaks, enhancing the overall
+              learning environment. Training occurs both online and oﬄine,
+              guided by a mentor. Weekly in-person sessions take place on
+              Sundays for hospital patients, while online sessions are available
+              for those outside the hospital. The mentor provides materials and
+              supports independent study throughout the week. As of November 16,
+              12 sessions have been completed with 4 remaining participants. The
+              foundational IT skills course spans 15 sessions, after which
+              participants can choose a specialization - Support, DevOps, or QA
+              - and proceed with an 8-10 week course. In order to improve
+              English proﬁciency level, Alex engaged experienced online English
+              instructors and organized personalized training for all
+              participants. All project participants receive necessary legal and
+              HR consultations. All developed instructional materials will be
+              published under an open license as Open Educational Resources
+              (OER) so that anyone interested can replicate the project in their
+              regions.
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <ul class="container" id="contacts">
+        <li>Alex Stasuk</li>
+        <li>tel: (097) 79-66-508</li>
+        <li>email: alex@gg4l.com</li>
+      </ul>
+      <h6 class="container">Copyright ©2024 All rights reserved</h6>
+    </footer>
+    <script>
+      const h1 = document.getElementById('h1');
+      h1.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      });
+    </script>
+  </body>
+</html>
