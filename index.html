@@ -50,9 +50,11 @@
       }
       h2 {
       }
+      ul {
+        list-style: none;
+      }
       nav ul {
         display: flex;
-        list-style: none;
       }
       nav ul li a {
         font-size: 11px;
@@ -143,6 +145,39 @@
         text-align: center;
         font-weight: 400;
       }
+      @media (max-width: 576px) {
+        nav ul li:last-child a {
+          margin: 0;
+        }
+        section {
+          display: block;
+        }
+        img {
+          width: 100%;
+        }
+        img.logo-img {
+          margin-bottom: 25px;
+        }
+        article {
+          padding: 1.2rem 0;
+        }
+        #about ul {
+          display: block;
+        }
+        #about ul li p {
+          font-size: 24px;
+        }
+        ul.how {
+          display: block;
+          padding: 25px 0;
+        }
+        #contacts {
+          display: block;
+        }
+        #contacts li {
+          text-align: center;
+        }
+      }
     </style>
   </head>
   <body>
@@ -188,15 +223,15 @@
             <p class="title">Key directions</p>
             <ul>
               <li>
-                <p>Academy</p>
+                <p>#Academy</p>
                 <span>Where the Journey begins</span>
               </li>
               <li>
-                <p>Tech</p>
+                <p>#Tech</p>
                 <span>Do. Better. Faster Repeat</span>
               </li>
               <li>
-                <p>Legion</p>
+                <p>#Legion</p>
                 <span>Employ. Scale. Socialize</span>
               </li>
             </ul>
